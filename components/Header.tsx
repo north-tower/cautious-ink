@@ -20,7 +20,7 @@ function Header() {
         </form>
       </div>
 
-      <div>
+      <div className="flex items-center space-x-4 px-6">
         <Link href="/" className="icon">
           <HomeIcon className="h-5" />
           <p>Home</p>
@@ -33,9 +33,9 @@ function Header() {
           <Briefcase className="h-5" />
           <p>Jobs</p>
         </Link>
-        <Link href="/" className="icon hidden md:flex">
+        <Link href="/" className="icon md:flex">
           <MessagesSquare className="h-5" />
-          <p>Jobs</p>
+          <p>Messaging</p>
         </Link>
       </div>
     </div>
