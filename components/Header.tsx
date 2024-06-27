@@ -45,7 +45,7 @@ function Header() {
         </SignedIn>
 
         <SignedOut>
-          <Button asChild>
+          <Button asChild variant="secondary">
             <SignInButton />
           </Button>
         
