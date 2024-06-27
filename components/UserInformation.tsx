@@ -8,7 +8,9 @@ async function UserInformation() {
     <div>
         <Avatar>
             <AvatarImage src={user?.imageUrl || "https://github.com/shadcn.png"} />
-            <AvatarFallback>CN</AvatarFallback>
+            <AvatarFallback>{user?.firstName?.charAt(0)}
+                {user?.lastName?.charAt(0)}
+            </AvatarFallback>
         </Avatar>
     </div>
   )
