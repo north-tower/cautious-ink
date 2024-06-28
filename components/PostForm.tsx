@@ -19,8 +19,9 @@ function PostForm() {
         }
     }
   return (
-    <div>
-        <form action="" ref={ref} >
+    <div className="mb-2">
+        <form action="" ref={ref} className="p-3 bg-white rounded-lg
+        border" >
             <div className="flex items-center space-x-2"> 
             <Avatar>
            
