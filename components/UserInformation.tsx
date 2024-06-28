@@ -49,6 +49,8 @@ async function UserInformation() {
                 </Button>
             </div>
         </SignedOut>
+
+        <hr className='w-full border-gray-200 my-5' />
     </div>
   )
 }
