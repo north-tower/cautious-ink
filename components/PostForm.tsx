@@ -3,7 +3,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { useUser } from "@clerk/nextjs";
 import { Button } from "./ui/button";
-import { ImageIcon } from "lucide-react";
+import { ImageIcon, XIcon } from "lucide-react";
 import { useRef, useState } from "react";
 
 function PostForm() {
@@ -51,11 +51,18 @@ function PostForm() {
                 </div>
             )}
 
-            <div>
+            <div className="flex justify-end mt-2 space-x-2">
                 <Button type="button" onClick={() => fileInputRef.current?.click()}>
                     <ImageIcon className="mr-2" size={16} color="currentColor" />
                     {preview ? "Change" : "Add"} image
                 </Button>
+
+                {preview && (
+                    <Button variant="outline">
+                        <XIcon className="mr-2" size={16} color="currentColor" />
+                        Remove image
+                    </Button>
+                )}
             </div>
         </form>
     </div>
