@@ -45,10 +45,16 @@ function PostForm() {
 
             </div>
 
+            {preview && (
+                <div className="mt-3">
+                    <img src={preview} className="w-full object-cover"  />
+                </div>
+            )}
+
             <div>
                 <Button type="button" onClick={() => fileInputRef.current?.click()}>
                     <ImageIcon className="mr-2" size={16} color="currentColor" />
-                    Add
+                    {preview ? "Change" : "Add"} image
                 </Button>
             </div>
         </form>
